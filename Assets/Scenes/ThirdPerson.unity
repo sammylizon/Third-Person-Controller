@@ -231,6 +231,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1873209313}
   cameraZoom: 5
+  minVertAngle: 1
+  maxVertAngle: 50
+  framingOffset: {x: 0, y: 0}
+  invertY: 0
+  invertX: 1
+  verticalSensitivity: 7
+  horizontalSensitivity: 7
 --- !u!114 &489363137
 MonoBehaviour:
   m_ObjectHideFlags: 0
