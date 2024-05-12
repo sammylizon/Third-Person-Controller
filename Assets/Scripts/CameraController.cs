@@ -60,4 +60,6 @@ public class CameraController : MonoBehaviour
         transform.position = focusPosition - targetRotation *  new Vector3(0, 0, cameraZoom);
         transform.rotation = targetRotation;
     }
+
+    public Quaternion PlanarRotation => Quaternion.Euler(0, rotationY,0);
 }
