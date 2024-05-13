@@ -6,14 +6,16 @@ using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
-
+    
     CameraController cameraController;
     Animator animator;
     CharacterController controller;
+    [Header("Speed and Camera Settings")]
     [SerializeField] float moveSpeed = 5f; 
     [SerializeField] float rotateSpeed = 500f;
     Quaternion targetRocation;
 
+    [Header("Ground Check Settings")]
     [SerializeField] float groundCheckRadius = 0.2f;
     [SerializeField] Vector3 groundCheckOffset; 
     [SerializeField] LayerMask groundLayer; 
