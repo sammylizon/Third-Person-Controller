@@ -43,13 +43,13 @@ public class CameraController : MonoBehaviour
 
         //Use player input for rotation - refactored for controller
         //Horizontal Input
-        rotationY += Input.GetAxis("Camera Y") * invertXVal* horizontalSensitivity;
+        rotationY += Input.GetAxis("Camera X") * invertXVal* horizontalSensitivity;
 
         //limit camera roatation with clamp
         rotationX = Mathf.Clamp(rotationX, minVertAngle, maxVertAngle);
 
         //Vertical Input
-        rotationX += Input.GetAxis("Camera X") * invertYVal* verticalSensitivity;
+        rotationX += Input.GetAxis("Camera Y") * invertYVal* verticalSensitivity;
 
         //Create a 45 degree rotation to use on camera 
         var targetRotation = Quaternion.Euler(rotationX, rotationY, 0);
